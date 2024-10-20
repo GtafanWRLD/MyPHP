@@ -1,7 +1,6 @@
 <?php require('connect.php') ?>
 <!DOCTYPE html>
 <html lang="pl-PL">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +8,11 @@
     <link rel="stylesheet" type="text/css" href="styl.css">
     <title>Rozgrywki futbolowe</title>
 </head>
-
 <body>
     <div id="baner">
         <h2 class="styl">Światowe rozgrywki piłkarskie</h2>
         <img src="boisko.png" alt="boisko">
     </div>
-
     <div>
         <?php
         $qrr = $conn->prepare("SELECT zespol1, zespol2, wynik, data_rozgrywki FROM rozgrywka WHERE zespol1 = 'EVG'");
@@ -35,11 +32,8 @@
 
         ?>
     </div>
-
     <div id="main">
-
     </div>
-
     <div id="left">
         <h2>Reprezentacja Polski</h2>
         <p>Podaj pozycję zawodników (1-bramkarze, 2-obrońcy, 3-pomocnicy, 4-napastnicy)
@@ -66,56 +60,9 @@
                 ?>
             </ul>
     </div>
-
     <div id="footer">
         <img src="piłka.png" alt="piłkarz">
-        <p>Autor: Jan Kupczyk</p>
+        <p>Autor: Gracjan Downar</p>
     </div>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Jan Kupczyk -->
